@@ -30,7 +30,8 @@ def Create():
     hosts.write("127.0.0.1\t" + name + "\n")
     hosts.close()
     os.system("sudo systemctl reload nginx")
-    Label(root, text="Success! Go to the /home/domains/" + name + '/ and create your first site file!').grid(row=4, columnspan=3)
+    Label(root, text="Success! Visit /home/domains/" + name + '/ and create your first site file!').grid(row=4, columnspan=3)
+
 def Enter():
     # conf.destroy()
     # create.destroy()
