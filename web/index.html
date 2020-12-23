@@ -13,16 +13,19 @@
             <h1>Servak</h1>
         </header>
         <article>
-            <button>Basic Configuration</button>
-            <button onclick="show('block')">Create Project</button>
+            <button onclick="show('conf', 'block')", class = "commands">Basic Configuration</button>
+            <button onclick="show('new', 'block')", class = "commands">Create Project</button>
             <!--Текст здесь!!!!!!-->
             <p>Lorem ipsum dollar ....</p>
-            <div title="Click On The Black Field To Close The Window!" id="filter" onclick="show('none')"></div>
-            <div id="modalForm">
-                <form action="">
+            <div id="filter" onclick="hide()"></div>
+            <div id="new">
+                <form>
                     <h2>Enter Project Name:</h2>
                     <input maxlength="30" title="Enter Project Name Here!" type="text">
                 </form>
+            </div>
+            <div id="conf">
+                <h2 id="ready">Now Ngnix is installed. Would you like to create your first project?</h2>
             </div>
         </article>
         <footer>
