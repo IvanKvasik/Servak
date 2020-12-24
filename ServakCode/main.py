@@ -7,8 +7,8 @@ root.title("Servak")
 
 conf_commands=[
     "apt install nginx", "ufw allow https comment 'Open all to access Nginx port 443'", "ufw allow http comment 'Open access Nginx port 80'", 
-    "ufw allow ssh comment 'Open access OpenSSH port 22'", "ufw enable", "chown -R 755 /etc/hosts", "sudo add-apt-repository universe",
-    "sudo apt install php7.2-cli php7.2-xml php7.2-mysql"
+    "ufw allow ssh comment 'Open access OpenSSH port 22'", "ufw enable", "chown -R 755 /etc/hosts", "add-apt-repository universe",
+    "apt install php7.2-cli php7.2-xml php7.2-mysql"
 ]
 def Configure():
     for i in conf_commands:
