@@ -29,7 +29,7 @@ def Create():
         conf.close()
         os.chdir("/etc/nginx/sites-enabled/")
         os.system("ln -v -s /etc/nginx/sites-available/" + name)
-    if (name in open('/etc/hosts', 'r')):
+    if (not name in open('/etc/hosts', 'r').read()):
         hosts = open('/etc/hosts', 'a')
         hosts.write("127.0.0.1\t" + name + "\n")
         hosts.close()
