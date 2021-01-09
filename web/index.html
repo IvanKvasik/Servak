@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Servak</title>
+        <link rel="shortcut icon" href="ServakLogo.png" type="images/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header>
+            <h1>servak</h1>
+        </header>
+        <article>
+            <button id="btb">Basic Configuration</button>
+            <button id="btc">Create Project</button>
+            <div id="fil"></div>
+            <form id="md", action="javascript:Create();">
+                <h2>Enter Project Name:</h2>
+                <input id="name" required><br>
+                <h2>Enter Your Ubuntu User Password:</h2>
+                <input type="password" id="password1" required>
+                <button class="ok">OK</button>
+            </form>
+            <form id="cf", action="javascript:Configure();">
+                <h2>Enter Your Ubuntu User Password:</h2>
+                <input type="password" id="password2" required>
+                <button class="ok">OK</button>
+            </form>
+            <div id="cr">
+                <h2 id="suc">Now Ngnix is installed. Would you like to create your first project?</h2>
+            </div>
+            <div id="success">
+                <h2 id="suc2"></h2>
+            </div>
+        </article>
+        <script type="text/javascript" src="/eel.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
