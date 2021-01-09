@@ -21,7 +21,7 @@ async function Create(){
 	await eel.Create(name.value, pass1.value);
 	success.style.display = 'block';
 	fil.style.display = 'block';
-	suc.innerHTML = "Success! Visit /home/domains/" + name.value + "/, create your first site file\n and visit http://" + name.value;
+	suc.innerHTML = "Success! Visit /home/domains/" + name.value + "/, create your first site file\n and visit http://" + name.value + "\nIf it doesn't work, try again";
 }
 
 btn.onclick = () => {
